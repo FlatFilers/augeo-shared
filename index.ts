@@ -35,11 +35,9 @@ import { xlsxExtractorPlugin } from '@flatfile/plugin-xlsx-extractor';
 import { submitData } from './actions/submitData';
 import { blueprintSheets } from './blueprints/benefitsBlueprint';
 import { benefitElectionsValidations } from './recordHooks/benefits/benefitElectionsValidations';
-import { PipelineJobConfig, records } from '@flatfile/api/api';
 import { FlatfileEvent } from '@flatfile/listener';
 import { automap } from '@flatfile/plugin-automap';
 import { RecordsResponse } from '@flatfile/api/api';
-import { record } from 'io-ts';
 
 // Define the main function that sets up the listener
 export default function (listener) {

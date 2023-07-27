@@ -1,11 +1,7 @@
 // Importing necessary modules and objects
 import moment from 'moment';
 import { momentFormats } from './dateFormats';
-import { blueprintSheets as hcmBlueprintSheets } from '../blueprints/hcmBlueprint';
-import { blueprintSheets as benefitsBlueprintSheets } from '../blueprints/benefitsBlueprint';
-
-// Combine all the blueprints into one array
-const allBlueprintSheets = [...hcmBlueprintSheets, ...benefitsBlueprintSheets];
+import { blueprintSheets } from '../blueprints/benefitsBlueprint';
 
 // A helper function to format the given date string
 function formatDate(dateString) {
@@ -42,7 +38,7 @@ function formatDate(dateString) {
 // A function to format all date fields of a record
 function formatRecordDates(record, sheetSlug) {
   // Find the sheet with the given slug from the blueprint sheets
-  const sheet = allBlueprintSheets.find((sheet) => sheet.slug === sheetSlug);
+  const sheet = blueprintSheets.find((sheet) => sheet.slug === sheetSlug);
   // Get an array of keys for all fields with type 'date'
   const dateFields = sheet.fields
     .filter((field) => field.type === 'date')
