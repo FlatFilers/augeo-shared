@@ -1,5 +1,3 @@
-import { FlatfileRecord } from '@flatfile/hooks';
-
 // Function to round the currency values of specified fields in a FlatfileRecord
 export const roundCurrencyValues = (record, fields) => {
   // Loop over each field in the fields array

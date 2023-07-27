@@ -38,6 +38,8 @@ export function benefitElectionsValidations(record) {
     // you may wish to handle this error in a different way or rethrow the error.
   }
 
+  record.metadata = "processed"
+
   // Returns the validated and possibly modified record.
   return record;
 }
