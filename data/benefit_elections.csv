@@ -1,0 +1,691 @@
+﻿Employee ID,Benefit Plan,Currently Enrolled?,Coverage Start Date,Employer Contribution,Coverage
+21255,Pension - Collectum Supplemental ITP1 (Employee),TRUE,"Jan 1, 2015",88417.821,Other
+21255,Pension - Collectum ITP1 (Employee),FALSE,5/9/2020,21611.8463,Other
+21306,Pension - Collectum ITP1 (Employee),TRUE,11/27/2013,22144.1309,Other
+21302,Pension - Collectum ITP1 (Employee),FALSE,3/28/2020,"95306,7128",Other
+21077,Pension - Collectum Supplemental ITP1 (Employee),TRUE,5/24/2014,-86939.0901,Other
+21077,Pension - Collectum ITP1 (Employee),TRUE,,37484.7159,Other
+21126,Pension - Collectum Supplemental ITP1 (Employee),N,1/26/2021,33262.7032,Other
+21126,Pension - Collectum ITP1 (Employee),Y,9/23/2019,0,Other
+21263,Pension - Collectum ITP1 (Employee),FALSE,5/20/2021,0,Other
+21347,Basic Group Life - AXA UK (Employee),Nope,9/8/2012,0,Insurance
+21346,Basic Group Life - AXA UK (Employee),FALSE,7/11/2018,0,Insurance
+21345,Basic Group Life - AXA UK (Employee),FALSE,6/4/2014,,Insurance
+21131,Basic Group Life - AXA UK (Employee),TRUE,3/11/2020,,Insurance
+21129,Basic Group Life - AXA UK (Employee),TRUE,3/27/2016,,Insurance
+21266,Basic Group Life - AXA UK (Employee),No,3/19/2022,,Insurance
+21332,Basic Group Life - AXA UK (Employee),yes,8/7/2022,77002.4423,Insurance
+21168,Basic Group Life - AXA UK (Employee),TRUE,3/10/2017,13661.6607,Insurance
+21299,Basic Group Life - AXA UK (Employee),FALSE,9/26/2014,60828.0619,Insurance
+21244,Basic Group Life - AXA UK (Employee),TRUE,4/17/2013,1641.087,Insurance
+21254,Basic Group Life - AXA UK (Employee),FALSE,4/30/2017,16221.6339,Insurance
+21239,Basic Group Life - AXA UK (Employee),FALSE,,4117.8323,Insurance
+21305,Basic Group Life - AXA UK (Employee),FALSE,9/4/2012,90002.5776,Insurance
+21173,Basic Group Life - AXA UK (Employee),TRUE,9/23/2016,18568.1797,Insurance
+21229,Basic Group Life - AXA UK (Employee),,1/11/2013,28863.5323,Insurance
+21298,Basic Group Life - AXA UK (Employee),,12/20/2017,44036.9749,Insurance
+21359,Basic Group Life - AXA UK (Employee),,3/9/2017,40325.7239,Insurance
+21358,Basic Group Life - AXA UK (Employee),FALSE,9/18/2013,46394.4154,Insurance
+21357,Basic Group Life - AXA UK (Employee),TRUE,9/17/2018,40099.6365,Insurance
+21356,Basic Group Life - AXA UK (Employee),TRUE,11/5/2015,39272.6875,Insurance
+21355,Basic Group Life - AXA UK (Employee),TRUE,6/17/2019,24658.5944,Insurance
+21354,Basic Group Life - AXA UK (Employee),FALSE,2/9/2018,99431.7646,Insurance
+21353,Basic Group Life - AXA UK (Employee),TRUE,3/30/2021,71368.949,Insurance
+21352,Basic Group Life - AXA UK (Employee),TRUE,4/1/2021,74289.4809,Insurance
+21205,Basic Group Life - AXA UK (Employee),FALSE,2/21/2016,53203.352,Insurance
+21351,Basic Group Life - AXA UK (Employee),FALSE,,88733.9817,Insurance
+21350,Basic Group Life - AXA UK (Employee),FALSE,1/25/2017,89367.3412,Insurance
+21349,Basic Group Life - AXA UK (Employee),FALSE,1/20/2017,626.4524,Insurance
+21348,Basic Group Life - AXA UK (Employee),FALSE,6/21/2017,84387.3868,Insurance
+21135,Basic Group Life - Standard Life  (Employee),TRUE,3/20/2014,90122.5858,Insurance
+21135,Long Term Disability - Standard Life Basic (Employee),FALSE,4/2/2017,36792.1674,Insurance
+21135,Short Term Disability - Standard Life  (Employee),TRUE,11/13/2015,79329.5737,Insurance
+21135,Voluntary AD&D - Standard Life  (Employee),TRUE,4/12/2013,34811.3007,Insurance
+21134,Basic Group Life - Standard Life  (Employee),FALSE,4/14/2017,47684.234,Insurance
+21134,Long Term Disability - Standard Life Basic (Employee),FALSE,7/26/2017,81316.7362,Insurance
+21134,Short Term Disability - Standard Life  (Employee),TRUE,5/22/2014,11398.9291,Insurance
+21134,Voluntary AD&D - Standard Life  (Employee),TRUE,7/26/2020,77012.5269,Insurance
+21134,Voluntary Supplemental Life - Standard Life  (Employee),FALSE,4/7/2014,53305.2527,Insurance
+21133,Basic Group Life - Standard Life  (Employee),TRUE,11/20/2018,41761.5615,Insurance
+21133,Short Term Disability - Standard Life  (Employee),TRUE,9/30/2017,46859.7588,Insurance
+21133,Voluntary AD&D - Standard Life  (Employee),TRUE,8/4/2014,44078.3135,Insurance
+21133,Voluntary Supplemental Life - Standard Life  (Employee),FALSE,1/18/2016,46006.4021,Insurance
+21326,Basic Group Life - Standard Life  (Employee),TRUE,4/4/2017,64275.3823,Insurance
+21326,Short Term Disability - Standard Life  (Employee),TRUE,6/17/2012,1943.3801,Insurance
+21326,Voluntary Supplemental Life - Standard Life  (Employee),FALSE,3/15/2015,6676.4346,Insurance
+21198,Long Term Disability - Standard Life Basic (Employee),TRUE,3/25/2018,57528.5182,Insurance
+21198,Short Term Disability - Standard Life  (Employee),TRUE,3/19/2021,31590.9889,Insurance
+21198,Voluntary AD&D - Standard Life  (Employee),FALSE,8/22/2022,32060.2307,Insurance
+21198,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,6/17/2022,89444.2796,Insurance
+21198,Basic Group Life - Standard Life  (Employee),TRUE,8/17/2021,24119.8827,Insurance
+21132,Basic Group Life - Standard Life  (Employee),FALSE,7/15/2022,31771.4946,Insurance
+21132,Long Term Disability - Standard Life Basic (Employee),FALSE,6/29/2018,47193.5001,Insurance
+21132,Short Term Disability - Standard Life  (Employee),TRUE,7/28/2017,9776.6251,Insurance
+21132,Voluntary AD&D - Standard Life  (Employee),TRUE,7/22/2012,34762.1878,Insurance
+21132,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,10/27/2021,26813.5562,Insurance
+21387,Voluntary Supplemental Life - Standard Life  (Employee),FALSE,4/6/2020,78973.4409,Insurance
+21387,Basic Group Life - Standard Life  (Employee),FALSE,,41466.0563,Insurance
+21387,Long Term Disability - Standard Life Enhanced (Employee),FALSE,5/3/2015,74672.6718,Insurance
+21276,Basic Group Life - Standard Life  (Employee),FALSE,5/20/2016,59156.2973,Insurance
+21276,Short Term Disability - Standard Life  (Employee),TRUE,1/15/2014,49285.1696,Insurance
+21275,Basic Group Life - Standard Life  (Employee),FALSE,11/28/2015,66474.6809,Insurance
+21275,Short Term Disability - Standard Life  (Employee),TRUE,8/9/2019,56435.2609,Insurance
+21275,Voluntary AD&D - Standard Life  (Employee),FALSE,11/17/2015,6006.1611,Insurance
+21275,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,7/26/2015,50734.975,Insurance
+21274,Basic Group Life - Standard Life  (Employee),TRUE,3/13/2013,52825.7682,Insurance
+21274,Long Term Disability - Standard Life Basic (Employee),TRUE,7/9/2016,84058.1783,Insurance
+21274,Short Term Disability - Standard Life  (Employee),TRUE,2/20/2014,3621.1847,Insurance
+21274,Voluntary AD&D - Standard Life  (Employee),TRUE,6/15/2019,65059.6354,Insurance
+21274,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,,25250.2776,Insurance
+21381,Basic Group Life - Standard Life  (Employee),TRUE,12/31/2014,27282.8046,Insurance
+21381,Long Term Disability - Standard Life Enhanced (Employee),TRUE,4/15/2016,18813.4882,Insurance
+21381,Short Term Disability - Standard Life  (Employee),TRUE,,58617.3934,Insurance
+21312,Basic Group Life - Standard Life  (Employee),TRUE,7/22/2022,45875.3743,Insurance
+21311,Basic Group Life - Standard Life  (Employee),FALSE,9/23/2022,43792.9122,Insurance
+21310,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,3/16/2022,45437.7683,Insurance
+21310,Basic Group Life - Standard Life  (Employee),FALSE,3/12/2013,65759.2242,Insurance
+21242,Basic Group Life - Standard Life  (Employee),FALSE,,45388.3219,Insurance
+21242,Long Term Disability - Standard Life Basic (Employee),FALSE,,86189.528,Insurance
+21242,Short Term Disability - Standard Life  (Employee),TRUE,2/12/2022,67843.3791,Insurance
+21242,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,4/6/2018,72348.6035,Insurance
+21386,Voluntary Supplemental Life - Standard Life  (Employee),FALSE,11/9/2012,95819.8549,Insurance
+21386,Basic Group Life - Standard Life  (Employee),TRUE,6/17/2018,66595.1239,Insurance
+21385,Basic Group Life - Standard Life  (Employee),FALSE,12/24/2021,52903.573,Insurance
+21385,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,4/14/2014,88417.821,Insurance
+21384,Basic Group Life - Standard Life  (Employee),TRUE,11/9/2016,21611.8463,Insurance
+21384,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,2/17/2016,22144.1309,Insurance
+21383,Basic Group Life - Standard Life  (Employee),TRUE,10/5/2022,95306.7128,Insurance
+21383,Short Term Disability - Standard Life  (Employee),FALSE,,86939.0901,Insurance
+21383,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,11/19/2012,37484.7159,Insurance
+21382,Basic Group Life - Standard Life  (Employee),FALSE,6/6/2013,33262.7032,Insurance
+21079,Long Term Disability - Standard Life Basic (Employee),TRUE,3/26/2014,88509.9265,Insurance
+21079,Short Term Disability - Standard Life  (Employee),TRUE,5/9/2020,60465.4559,Insurance
+21079,Voluntary AD&D - Standard Life  (Employee),FALSE,11/27/2013,58606.469,Insurance
+21079,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,3/28/2020,52761.068,Insurance
+21079,Basic Group Life - Standard Life  (Employee),FALSE,5/24/2014,88726.9984,Insurance
+21296,Basic Group Life - Standard Life  (Employee),TRUE,,14599.7533,Insurance
+21295,Basic Group Life - Standard Life  (Employee),TRUE,1/26/2021,12307.1154,Insurance
+21293,Basic Group Life - Standard Life  (Employee),FALSE,9/23/2019,55074.0135,Insurance
+21293,Short Term Disability - Standard Life  (Employee),FALSE,5/20/2021,77002.4423,Insurance
+21293,Voluntary Supplemental Life - Standard Life  (Employee),FALSE,9/8/2012,13661.6607,Insurance
+21292,Basic Group Life - Standard Life  (Employee),FALSE,7/11/2018,60828.0619,Insurance
+21292,Long Term Disability - Standard Life Basic (Employee),FALSE,6/4/2014,1641.087,Insurance
+21292,Short Term Disability - Standard Life  (Employee),FALSE,3/11/2020,16221.6339,Insurance
+21291,Basic Group Life - Standard Life  (Employee),TRUE,3/27/2016,4117.8323,Insurance
+21291,Long Term Disability - Standard Life Basic (Employee),TRUE,3/19/2022,90002.5776,Insurance
+21291,Short Term Disability - Standard Life  (Employee),TRUE,8/7/2022,18568.1797,Insurance
+21238,Basic Group Life - Standard Life  (Employee),TRUE,3/10/2017,28863.5323,Insurance
+21238,Long Term Disability - Standard Life Basic (Employee),TRUE,9/26/2014,44036.9749,Insurance
+21238,Voluntary AD&D - Standard Life  (Employee),FALSE,4/17/2013,40325.7239,Insurance
+21238,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,4/30/2017,46394.4154,Insurance
+21238,Spouse Life - Standard Life  (Spouse),FALSE,,40099.6365,Insurance
+21140,Long Term Disability - Standard Life Basic (Employee),FALSE,9/4/2012,39272.6875,Insurance
+21140,Short Term Disability - Standard Life  (Employee),FALSE,9/23/2016,24658.5944,Insurance
+21140,Voluntary AD&D - Standard Life  (Employee),TRUE,1/11/2013,99431.7646,Insurance
+21140,Voluntary Supplemental Life - Standard Life  (Employee),FALSE,12/20/2017,71368.949,Insurance
+21140,Basic Group Life - Standard Life  (Employee),FALSE,3/9/2017,74289.4809,Insurance
+21139,Basic Group Life - Standard Life  (Employee),FALSE,9/18/2013,53203.352,Insurance
+21139,Long Term Disability - Standard Life Basic (Employee),FALSE,9/17/2018,88733.9817,Insurance
+21139,Short Term Disability - Standard Life  (Employee),TRUE,11/5/2015,89367.3412,Insurance
+21139,Voluntary AD&D - Standard Life  (Employee),TRUE,6/17/2019,626.4524,Insurance
+21139,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,2/9/2018,84387.3868,Insurance
+21231,Short Term Disability - Standard Life  (Employee),FALSE,3/30/2021,90122.5858,Insurance
+21231,Voluntary Supplemental Life - Standard Life  (Employee),TRUE,4/1/2021,36792.1674,Insurance
+21231,Basic Group Life - Standard Life  (Employee),TRUE,2/21/2016,79329.5737,Insurance
+21231,Long Term Disability - Standard Life Basic (Employee),FALSE,,34811.3007,Insurance
+21390,Pension - Collectum ITP1 (Employee),FALSE,1/25/2017,47684.234,Other
+21391,Pension - Collectum ITP1 (Employee),FALSE,1/20/2017,81316.7362,Other
+21416,Pension - Collectum Supplemental ITP1 (Employee),FALSE,6/21/2017,11398.9291,Other
+21416,Pension - Collectum ITP1 (Employee),FALSE,3/20/2014,77012.5269,Other
+21376,Basic Group Life - NN Life  (Employee),TRUE,4/2/2017,53305.2527,Insurance
+21185,Basic Group Life - NN Life  (Employee),FALSE,11/13/2015,41761.5615,Insurance
+21125,Basic Group Life - NN Life  (Employee),TRUE,4/12/2013,46859.7588,Insurance
+21122,Basic Group Life - NN Life  (Employee),TRUE,4/14/2017,44078.3135,Insurance
+21279,Basic Group Life - NN Life  (Employee),FALSE,7/26/2017,46006.4021,Insurance
+21378,Basic Group Life - NN Life  (Employee),FALSE,5/22/2014,64275.3823,Insurance
+21428,Basic Group Life - AXA UK (Employee),TRUE,7/26/2020,1943.3801,Insurance
+21429,Basic Group Life - AXA UK (Employee),TRUE,4/7/2014,6676.4346,Insurance
+21432,Pension - Collectum Supplemental ITP1 (Employee),FALSE,11/20/2018,57528.5182,Other
+21433,Basic Group Life - NN Life  (Employee),TRUE,9/30/2017,31590.9889,Insurance
+21284,Basic Group Life - AXA UK (Employee),TRUE,8/4/2014,32060.2307,Insurance
+21127,Basic Group Life - AXA UK (Employee),TRUE,1/18/2016,89444.2796,Insurance
+21180,Basic Group Life - AXA UK (Employee),FALSE,4/4/2017,24119.8827,Insurance
+21435,Pension - Collectum ITP1 (Employee),TRUE,6/17/2012,31771.4946,Other
+21444,Basic Group Life - AXA Ireland (Employee),TRUE,3/15/2015,47193.5001,Insurance
+21169,Basic Group Life - AXA UK (Employee),FALSE,3/25/2018,9776.6251,Insurance
+21167,Basic Group Life - AXA UK (Employee),TRUE,3/19/2021,34762.1878,Insurance
+21227,Basic Group Life - AXA UK (Employee),TRUE,8/22/2022,26813.5562,Insurance
+21473,Basic Group Life - NN Life  (Employee),FALSE,6/17/2022,78973.4409,Insurance
+21474,Basic Group Life - NN Life  (Employee),TRUE,8/17/2021,41466.0563,Insurance
+21475,Basic Group Life - NN Life  (Employee),TRUE,7/15/2022,74672.6718,Insurance
+21476,Basic Group Life - NN Life  (Employee),FALSE,6/29/2018,59156.2973,Insurance
+21477,Basic Group Life - NN Life  (Employee),FALSE,7/28/2017,49285.1696,Insurance
+21252,Medical - Aviva  PMI,TRUE,7/22/2012,66474.6809,Medical
+21202,Medical - Chindex United Family Healthcare  Supplemental Health Insurance,TRUE,10/27/2021,56435.2609,Medical
+21245,Medical - Chindex United Family Healthcare  Supplemental Health Insurance,TRUE,4/6/2020,6006.1611,Medical
+21224,Medical - Chindex United Family Healthcare  Supplemental Health Insurance,FALSE,,50734.975,Medical
+21236,Medical - Chindex United Family Healthcare  Supplemental Health Insurance,FALSE,5/3/2015,52825.7682,Medical
+21228,Medical - Chindex United Family Healthcare  Supplemental Health Insurance,FALSE,5/20/2016,84058.1783,Medical
+21183,Medical - Chindex United Family Healthcare  Supplemental Health Insurance,FALSE,1/15/2014,3621.1847,Medical
+21203,Medical - Chindex United Family Healthcare  Supplemental Health Insurance,TRUE,11/28/2015,65059.6354,Medical
+21160,Medical - Chindex United Family Healthcare  Supplemental Health Insurance,FALSE,8/9/2019,25250.2776,Medical
+21380,Medical - Chindex United Family Healthcare  Supplemental Health Insurance,TRUE,11/17/2015,27282.8046,Medical
+21131,Medical - Bupa  Private Health Care,FALSE,7/26/2015,18813.4882,Medical
+21129,Medical - Bupa  Private Health Care,TRUE,3/13/2013,58617.3934,Medical
+21266,Medical - Bupa  Private Health Care,TRUE,7/9/2016,45875.3743,Medical
+21332,Medical - Bupa  Private Health Care,TRUE,2/20/2014,43792.9122,Medical
+21168,Medical - Bupa  Private Health Care,TRUE,6/15/2019,45437.7683,Medical
+21299,Medical - Bupa  Private Health Care,TRUE,,65759.2242,Medical
+21244,Medical - Bupa  Private Health Care,TRUE,12/31/2014,45388.3219,Medical
+21254,Medical - Bupa  Private Health Care,TRUE,4/15/2016,86189.528,Medical
+21239,Medical - Bupa  Private Health Care,TRUE,,67843.3791,Medical
+21305,Medical - Bupa  Private Health Care,TRUE,7/22/2022,72348.6035,Medical
+21173,Medical - Bupa  Private Health Care,TRUE,9/23/2022,95819.8549,Medical
+21229,Medical - Bupa  Private Health Care,FALSE,3/16/2022,66595.1239,Medical
+21298,Medical - Bupa  Private Health Care,TRUE,3/12/2013,52903.573,Medical
+21205,Medical - Bupa  Private Health Care,FALSE,,88417.821,Medical
+21135,Dental - Sun Life  Basic,FALSE,,21611.8463,Dental
+21135,Medical - Sun Life  Basic,FALSE,2/12/2022,22144.1309,Medical
+21134,Medical - Sun Life  Basic,TRUE,4/6/2018,95306.7128,Medical
+21133,Medical - Sun Life  Basic,TRUE,11/9/2012,86939.0901,Medical
+21133,Dental - Sun Life  Basic,FALSE,6/17/2018,37484.7159,Dental
+21326,Dental - Sun Life  Basic,TRUE,12/24/2021,33262.7032,Dental
+21326,Medical - Sun Life  Basic,FALSE,4/14/2014,88509.9265,Medical
+21198,Dental - Sun Life  Enhanced,TRUE,11/9/2016,60465.4559,Dental
+21198,Medical - Sun Life  Basic,TRUE,2/17/2016,58606.469,Medical
+21132,Dental - Sun Life  Basic,TRUE,10/5/2022,52761.068,Dental
+21132,Medical - Sun Life  Basic,TRUE,,88726.9984,Medical
+21387,Dental - Sun Life  Enhanced,FALSE,11/19/2012,14599.7533,Dental
+21387,Medical - Sun Life  Enhanced,TRUE,6/6/2013,12307.1154,Medical
+21276,Dental - Sun Life  Basic,FALSE,3/26/2014,55074.0135,Dental
+21276,Medical - Sun Life  Basic,TRUE,5/9/2020,77002.4423,Medical
+21275,Dental - Sun Life  Enhanced,TRUE,11/27/2013,13661.6607,Dental
+21275,Medical - Sun Life  Basic,FALSE,3/28/2020,60828.0619,Medical
+21274,Dental - Sun Life  Enhanced,TRUE,5/24/2014,1641.087,Dental
+21381,Dental - Sun Life  Basic,FALSE,,16221.6339,Dental
+21381,Medical - Sun Life  Basic,TRUE,1/26/2021,4117.8323,Medical
+21312,Medical - Sun Life  Basic,TRUE,9/23/2019,90002.5776,Medical
+21312,Dental - Sun Life  Enhanced,FALSE,5/20/2021,18568.1797,Dental
+21311,Dental - Sun Life  Basic,FALSE,9/8/2012,28863.5323,Dental
+21311,Medical - Sun Life  Basic,FALSE,7/11/2018,44036.9749,Medical
+21310,Dental - Sun Life  Basic,FALSE,6/4/2014,40325.7239,Dental
+21310,Medical - Sun Life  Basic,FALSE,3/11/2020,46394.4154,Medical
+21242,Dental - Sun Life  Basic,FALSE,3/27/2016,40099.6365,Dental
+21386,Dental - Sun Life  Basic,TRUE,3/19/2022,39272.6875,Dental
+21386,Medical - Sun Life  Basic,TRUE,8/7/2022,24658.5944,Medical
+21385,Medical - Sun Life  Basic,TRUE,3/10/2017,99431.7646,Medical
+21384,Dental - Sun Life  Enhanced,TRUE,9/26/2014,71368.949,Dental
+21384,Medical - Sun Life  Enhanced,TRUE,4/17/2013,74289.4809,Medical
+21383,Medical - Sun Life  Basic,FALSE,4/30/2017,53203.352,Medical
+21383,Dental - Sun Life  Basic,TRUE,,88733.9817,Dental
+21079,Dental - Sun Life  Basic,FALSE,9/4/2012,89367.3412,Dental
+21079,Medical - Sun Life  Basic,FALSE,9/23/2016,626.4524,Medical
+21296,Medical - Sun Life  Basic,FALSE,1/11/2013,84387.3868,Medical
+21295,Dental - Sun Life  Basic,TRUE,12/20/2017,90122.5858,Dental
+21295,Medical - Sun Life  Basic,FALSE,3/9/2017,36792.1674,Medical
+21293,Medical - Sun Life  Basic,FALSE,9/18/2013,79329.5737,Medical
+21292,Dental - Sun Life  Basic,FALSE,9/17/2018,34811.3007,Dental
+21292,Medical - Sun Life  Basic,FALSE,11/5/2015,47684.234,Medical
+21291,Dental - Sun Life  Enhanced,TRUE,6/17/2019,81316.7362,Dental
+21291,Medical - Sun Life  Basic,TRUE,2/9/2018,11398.9291,Medical
+21238,Dental - Sun Life  Enhanced,TRUE,3/30/2021,77012.5269,Dental
+21238,Medical - Sun Life  Basic,FALSE,4/1/2021,53305.2527,Medical
+21140,Medical - Sun Life  Basic,TRUE,2/21/2016,41761.5615,Medical
+21140,Dental - Sun Life  Basic,TRUE,,46859.7588,Dental
+21139,Dental - Sun Life  Basic,FALSE,1/25/2017,44078.3135,Dental
+21139,Medical - Sun Life  Basic,FALSE,1/20/2017,46006.4021,Medical
+21231,Medical - Sun Life  Enhanced,FALSE,6/21/2017,64275.3823,Medical
+21393,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,3/20/2014,1943.3801,Other
+21393,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,4/2/2017,6676.4346,Medical
+21392,Supplementary Retirement - AG2R La Mondiale  Plan Epargne Retraite (Article 83),TRUE,11/13/2015,57528.5182,Retirement
+21392,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,4/12/2013,31590.9889,Other
+21392,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,4/14/2017,32060.2307,Medical
+21374,Contingency Fund - Malakoff Médéric  Prévoyance Non Cadres,TRUE,7/26/2017,89444.2796,Other
+21374,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,5/22/2014,24119.8827,Medical
+21373,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,7/26/2020,31771.4946,Medical
+21373,Contingency Fund - Malakoff Médéric  Prévoyance Non Cadres,TRUE,4/7/2014,47193.5001,Other
+21372,Contingency Fund - Malakoff Médéric  Prévoyance Non Cadres,TRUE,11/20/2018,9776.6251,Other
+21372,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,9/30/2017,34762.1878,Medical
+21322,Contingency Fund - Malakoff Médéric  Prévoyance Non Cadres,TRUE,8/4/2014,26813.5562,Other
+21322,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,1/18/2016,78973.4409,Medical
+21307,Contingency Fund - Malakoff Médéric  Prévoyance Non Cadres,TRUE,4/4/2017,41466.0563,Other
+21307,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,6/17/2012,74672.6718,Medical
+21303,Contingency Fund - Malakoff Médéric  Prévoyance Non Cadres,TRUE,3/15/2015,59156.2973,Other
+21303,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,3/25/2018,49285.1696,Medical
+21301,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,3/19/2021,66474.6809,Other
+21301,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,8/22/2022,56435.2609,Medical
+21300,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,6/17/2022,6006.1611,Medical
+21300,Contingency Fund - Malakoff Médéric  Prévoyance Non Cadres,FALSE,8/17/2021,50734.975,Other
+21409,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,7/15/2022,52825.7682,Other
+21409,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,6/29/2018,84058.1783,Medical
+21408,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,7/28/2017,3621.1847,Other
+21408,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,7/22/2012,65059.6354,Medical
+21407,Supplementary Retirement - AG2R La Mondiale  Plan Epargne Retraite (Article 83),TRUE,10/27/2021,25250.2776,Retirement
+21407,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,4/6/2020,27282.8046,Other
+21407,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,,18813.4882,Medical
+21406,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,5/3/2015,58617.3934,Other
+21406,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,5/20/2016,45875.3743,Medical
+21403,Supplementary Retirement - AG2R La Mondiale  Plan Epargne Retraite (Article 83),FALSE,1/15/2014,43792.9122,Retirement
+21403,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,11/28/2015,45437.7683,Other
+21403,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,8/9/2019,65759.2242,Medical
+21402,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,11/17/2015,45388.3219,Other
+21402,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,7/26/2015,86189.528,Medical
+21401,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,3/13/2013,67843.3791,Other
+21401,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,7/9/2016,72348.6035,Medical
+21400,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,2/20/2014,95819.8549,Other
+21400,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,6/15/2019,66595.1239,Medical
+21399,Contingency Fund - Malakoff Médéric  Prévoyance Non Cadres,TRUE,,52903.573,Other
+21399,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,12/31/2014,88417.821,Medical
+21398,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,4/15/2016,21611.8463,Other
+21398,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,,22144.1309,Medical
+21397,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,7/22/2022,95306.7128,Other
+21397,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,9/23/2022,86939.0901,Medical
+21395,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,3/16/2022,37484.7159,Other
+21395,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,3/12/2013,33262.7032,Medical
+21394,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,,88509.9265,Other
+21394,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,,60465.4559,Medical
+21396,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,2/12/2022,58606.469,Other
+21396,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,4/6/2018,,Medical
+21297,Supplementary Retirement - AG2R La Mondiale  Plan Epargne Retraite (Article 83),TRUE,11/9/2012,88726.9984,Retirement
+21297,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,6/17/2018,14599.7533,Other
+21297,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,12/24/2021,12307.1154,Medical
+21206,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,4/14/2014,55074.0135,Medical
+21206,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,FALSE,11/9/2016,77002.4423,Other
+21130,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,2/17/2016,13661.6607,Medical
+21130,Contingency Fund - Malakoff Médéric  Prévoyance Non Cadres,TRUE,10/5/2022,60828.0619,Other
+21178,Supplementary Retirement - AG2R La Mondiale  Plan Epargne Retraite (Article 83),TRUE,,1641.087,Retirement
+21178,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,11/19/2012,16221.6339,Other
+21178,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,6/6/2013,4117.8323,Medical
+21405,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,3/26/2014,90002.5776,Other
+21405,Health - La Mutuelle Générale  Mutuelle Groupe,FALSE,5/9/2020,,Medical
+21404,Health - La Mutuelle Générale  Mutuelle Groupe,TRUE,11/27/2013,28863.5323,Medical
+21429,Medical - Bupa  Private Health Care,TRUE,3/28/2020,44036.9749,Medical
+21404,Supplementary Retirement - AG2R La Mondiale  Plan Epargne Retraite (Article 83),FALSE,5/24/2014,40325.7239,Retirement
+21404,Contingency Fund - Malakoff Médéric  Prévoyance Cadres,TRUE,,46394.4154,Other
+21284,Medical - Bupa  Private Health Care,FALSE,1/26/2021,40099.6365,Medical
+21127,Medical - Bupa  Private Health Care,TRUE,9/23/2019,39272.6875,Medical
+21180,Medical - Bupa  Private Health Care,TRUE,5/20/2021,24658.5944,Medical
+21444,Medical - Aviva  PMI,FALSE,9/8/2012,99431.7646,Medical
+21169,Medical - Bupa  Private Health Care,FALSE,7/11/2018,71368.949,Medical
+21167,Medical - Bupa  Private Health Care,FALSE,6/4/2014,74289.4809,Medical
+21227,Medical - Bupa  Private Health Care,FALSE,3/11/2020,53203.352,Medical
+21287,Medical - Bupa  Health Fund,FALSE,3/27/2016,88733.9817,Medical
+21121,Medical - Bupa  Health Fund,FALSE,3/19/2022,89367.3412,Medical
+21184,Medical - Bupa  Health Fund,TRUE,8/7/2022,626.4524,Medical
+21286,Medical - Bupa  Health Fund,TRUE,3/10/2017,84387.3868,Medical
+21315,Medical - Bupa  Health Fund,TRUE,9/26/2014,90122.5858,Medical
+21278,Medical - Bupa  Health Fund,TRUE,4/17/2013,36792.1674,Medical
+21285,Medical - Bupa  Health Fund,TRUE,4/30/2017,79329.5737,Medical
+21186,Health - MetLife Insurance  IMSS,FALSE,,34811.3007,Medical
+21189,Health - MetLife Insurance  IMSS,TRUE,9/4/2012,47684.234,Medical
+21196,Health - MetLife Insurance  IMSS,FALSE,9/23/2016,81316.7362,Medical
+21138,Health - MetLife Insurance  IMSS,FALSE,1/11/2013,11398.9291,Medical
+21208,Health - MetLife Insurance  IMSS,FALSE,12/20/2017,77012.5269,Medical
+21187,Health - MetLife Insurance  IMSS,TRUE,3/9/2017,53305.2527,Medical
+21136,Health - MetLife Insurance  IMSS,FALSE,9/18/2013,41761.5615,Medical
+21076,Health - MetLife Insurance  IMSS,FALSE,9/17/2018,,Medical
+21137,Health - MetLife Insurance  IMSS,FALSE,11/5/2015,44078.3135,Medical
+21489,Medical - Bupa  Health Fund,FALSE,6/17/2019,46006.4021,Medical
+21491,Medical - Bupa,TRUE,2/9/2018,64275.3823,Medical
+21492,Medical - Bupa,TRUE,3/30/2021,,Medical
+21288,Medical - Bupa,TRUE,4/1/2021,6676.4346,Medical
+21316,Medical - Bupa,FALSE,2/21/2016,57528.5182,Medical
+21494,Medical - Bupa,TRUE,,31590.9889,Medical
+21495,Medical - Bupa  Health Fund,TRUE,1/25/2017,32060.2307,Medical
+21496,Medical - Bupa  Health Fund,FALSE,1/20/2017,89444.2796,Medical
+21490,Medical - Bupa,FALSE,6/21/2017,24119.8827,Medical
+21497,Medical - Bupa,FALSE,3/20/2014,31771.4946,Medical
+21498,Medical - Bupa,FALSE,4/2/2017,47193.5001,Medical
+21499,Medical - Bupa,FALSE,11/13/2015,9776.6251,Medical
+21169,Childcare Vouchers - Computershare Voucher Services,TRUE,4/12/2013,34762.1878,Other
+21167,Childcare Vouchers - Computershare Voucher Services,FALSE,4/14/2017,26813.5562,Other
+21227,Childcare Vouchers - Computershare Voucher Services,TRUE,7/26/2017,78973.4409,Other
+21019,401(k) - Charles Schwab,TRUE,5/22/2014,41466.0563,Retirement
+21020,401(k) - Charles Schwab,FALSE,7/26/2020,74672.6718,Retirement
+21038,401(k) - Charles Schwab,FALSE,4/7/2014,59156.2973,Retirement
+21021,401(k) - Charles Schwab,TRUE,11/20/2018,49285.1696,Retirement
+21041,401(k) - Charles Schwab,TRUE,9/30/2017,66474.6809,Retirement
+21008,401(k) - Charles Schwab,FALSE,8/4/2014,56435.2609,Retirement
+21050,401(k) - Charles Schwab,TRUE,1/18/2016,6006.1611,Retirement
+21016,401(k) - Charles Schwab,TRUE,4/4/2017,50734.975,Retirement
+21035,401(k) - Charles Schwab,TRUE,6/17/2012,52825.7682,Retirement
+21013,401(k) - Charles Schwab,FALSE,3/15/2015,84058.1783,Retirement
+21063,401(k) - Charles Schwab,TRUE,3/25/2018,3621.1847,Retirement
+21068,401(k) - Charles Schwab,TRUE,3/19/2021,65059.6354,Retirement
+21030,401(k) - Charles Schwab,FALSE,8/22/2022,25250.2776,Retirement
+21054,401(k) - Charles Schwab,TRUE,6/17/2022,27282.8046,Retirement
+21066,401(k) - Charles Schwab,TRUE,8/17/2021,,Retirement
+21065,401(k) - Charles Schwab,FALSE,7/15/2022,58617.3934,Retirement
+21024,401(k) - Charles Schwab,TRUE,6/29/2018,45875.3743,Retirement
+21011,401(k) - Charles Schwab,TRUE,7/28/2017,43792.9122,Retirement
+21023,401(k) - Charles Schwab,FALSE,7/22/2012,45437.7683,Retirement
+21080,401(k) - Charles Schwab,FALSE,10/27/2021,65759.2242,Retirement
+21007,401(k) - Charles Schwab,TRUE,4/6/2020,45388.3219,Retirement
+21014,401(k) - Charles Schwab,TRUE,,86189.528,Retirement
+21046,401(k) - Charles Schwab,TRUE,5/3/2015,67843.3791,Retirement
+21026,401(k) - Charles Schwab,FALSE,5/20/2016,72348.6035,Retirement
+21025,401(k) - Charles Schwab,FALSE,1/15/2014,95819.8549,Retirement
+21018,401(k) - Charles Schwab,FALSE,11/28/2015,66595.1239,Retirement
+21056,401(k) - Charles Schwab,FALSE,8/9/2019,52903.573,Retirement
+21036,401(k) - Charles Schwab,TRUE,11/17/2015,88417.821,Retirement
+21039,401(k) - Charles Schwab,FALSE,7/26/2015,21611.8463,Retirement
+21051,401(k) - Charles Schwab,TRUE,3/13/2013,22144.1309,Retirement
+21074,401(k) - Charles Schwab,FALSE,7/9/2016,95306.7128,Retirement
+21034,401(k) - Charles Schwab,TRUE,2/20/2014,86939.0901,Retirement
+21047,401(k) - Charles Schwab,TRUE,6/15/2019,37484.7159,Retirement
+21029,401(k) - Charles Schwab,TRUE,,33262.7032,Retirement
+21073,401(k) - Charles Schwab,TRUE,12/31/2014,88509.9265,Retirement
+21010,401(k) - Charles Schwab,TRUE,4/15/2016,60465.4559,Retirement
+21001,401(k) - Charles Schwab,TRUE,,58606.469,Retirement
+21049,401(k) - Charles Schwab,TRUE,7/22/2022,52761.068,Retirement
+21022,401(k) - Charles Schwab,TRUE,9/23/2022,88726.9984,Retirement
+21070,401(k) - Charles Schwab,TRUE,3/16/2022,14599.7533,Retirement
+21006,401(k) - Charles Schwab,TRUE,3/12/2013,12307.1154,Retirement
+21043,401(k) - Charles Schwab,FALSE,,55074.0135,Retirement
+21055,401(k) - Charles Schwab,TRUE,,77002.4423,Retirement
+21064,401(k) - Charles Schwab,FALSE,2/12/2022,13661.6607,Retirement
+21058,401(k) - Charles Schwab,FALSE,4/6/2018,60828.0619,Retirement
+21048,401(k) - Charles Schwab,FALSE,11/9/2012,1641.087,Retirement
+21045,401(k) - Charles Schwab,TRUE,6/17/2018,16221.6339,Retirement
+21071,401(k) - Charles Schwab,TRUE,12/24/2021,4117.8323,Retirement
+21027,401(k) - Charles Schwab,FALSE,4/14/2014,90002.5776,Retirement
+21012,401(k) - Charles Schwab,TRUE,11/9/2016,18568.1797,Retirement
+21059,401(k) - Charles Schwab,FALSE,2/17/2016,28863.5323,Retirement
+21031,401(k) - Charles Schwab,TRUE,10/5/2022,44036.9749,Retirement
+21062,401(k) - Charles Schwab,TRUE,,40325.7239,Retirement
+21044,401(k) - Charles Schwab,TRUE,11/19/2012,46394.4154,Retirement
+21033,401(k) - Charles Schwab,TRUE,6/6/2013,40099.6365,Retirement
+21037,401(k) - Charles Schwab,FALSE,3/26/2014,39272.6875,Retirement
+21052,401(k) - Charles Schwab,TRUE,5/9/2020,24658.5944,Retirement
+21103,401(k) - Charles Schwab Roth,FALSE,11/27/2013,99431.7646,Retirement
+21103,401(k) - Charles Schwab,TRUE,3/28/2020,71368.949,Retirement
+21032,401(k) - Charles Schwab Catch-up,TRUE,5/24/2014,,Retirement
+21032,401(k) - Charles Schwab,FALSE,,53203.352,Retirement
+21075,401(k) - Charles Schwab Catch-up,TRUE,1/26/2021,88733.9817,Retirement
+21075,401(k) - Charles Schwab Roth,FALSE,9/23/2019,89367.3412,Retirement
+21075,401(k) - Charles Schwab,TRUE,5/20/2021,626.4524,Retirement
+21140,RRSP - Sun Life,TRUE,9/8/2012,84387.3868,Retirement
+21133,RRSP - Sun Life,FALSE,7/11/2018,90122.5858,Retirement
+21198,RRSP - Sun Life,FALSE,6/4/2014,36792.1674,Retirement
+21134,RRSP - Sun Life,FALSE,3/11/2020,79329.5737,Retirement
+21142,401(k) - Charles Schwab,FALSE,3/27/2016,34811.3007,Retirement
+21225,401(k) - Charles Schwab,FALSE,3/19/2022,47684.234,Retirement
+21237,401(k) - Charles Schwab,FALSE,8/7/2022,81316.7362,Retirement
+21242,RRSP - Sun Life,TRUE,3/10/2017,11398.9291,Retirement
+21243,401(k) - Charles Schwab,TRUE,9/26/2014,77012.5269,Retirement
+21241,401(k) - Charles Schwab,TRUE,4/17/2013,53305.2527,Retirement
+21002,401(k) - Charles Schwab Catch-up,TRUE,4/30/2017,41761.5615,Retirement
+21002,401(k) - Charles Schwab Roth,TRUE,,46859.7588,Retirement
+21002,401(k) - Charles Schwab,FALSE,9/4/2012,44078.3135,Retirement
+21072,401(k) - Charles Schwab Roth,TRUE,9/23/2016,46006.4021,Retirement
+21072,401(k) - Charles Schwab,FALSE,1/11/2013,64275.3823,Retirement
+21238,RRSP - Sun Life,FALSE,12/20/2017,1943.3801,Retirement
+21250,401(k) - Charles Schwab,FALSE,3/9/2017,6676.4346,Retirement
+21276,RRSP - Sun Life,TRUE,9/18/2013,57528.5182,Retirement
+21275,RRSP - Sun Life,FALSE,9/17/2018,31590.9889,Retirement
+21274,RRSP - Sun Life,FALSE,11/5/2015,32060.2307,Retirement
+21271,401(k) - Charles Schwab Roth,FALSE,6/17/2019,89444.2796,Retirement
+21271,401(k) - Charles Schwab,FALSE,2/9/2018,24119.8827,Retirement
+21277,401(k) - Charles Schwab Roth,TRUE,3/30/2021,31771.4946,Retirement
+21277,401(k) - Charles Schwab,TRUE,4/1/2021,47193.5001,Retirement
+21257,401(k) - Charles Schwab Catch-up,TRUE,2/21/2016,9776.6251,Retirement
+21257,401(k) - Charles Schwab,FALSE,,34762.1878,Retirement
+21104,401(k) - Charles Schwab Roth,TRUE,1/25/2017,26813.5562,Retirement
+21104,401(k) - Charles Schwab,TRUE,1/20/2017,78973.4409,Retirement
+21247,401(k) - Charles Schwab Roth,FALSE,6/21/2017,41466.0563,Retirement
+21247,401(k) - Charles Schwab,FALSE,3/20/2014,74672.6718,Retirement
+21248,401(k) - Charles Schwab Roth,FALSE,4/2/2017,59156.2973,Retirement
+21248,401(k) - Charles Schwab,FALSE,11/13/2015,49285.1696,Retirement
+21249,401(k) - Charles Schwab,FALSE,4/12/2013,66474.6809,Retirement
+21003,NQDC - Charles Schwab Deferred Compensation - Regular,TRUE,4/14/2017,56435.2609,Other
+21003,401(k) - Charles Schwab,FALSE,7/26/2017,6006.1611,Retirement
+21004,NQDC - Charles Schwab Deferred Compensation - Regular,TRUE,5/22/2014,50734.975,Other
+21004,401(k) - Charles Schwab,TRUE,7/26/2020,52825.7682,Retirement
+21086,401(k) - Charles Schwab Catch-up,FALSE,4/7/2014,84058.1783,Retirement
+21086,401(k) - Charles Schwab,FALSE,11/20/2018,3621.1847,Retirement
+21069,401(k) - Charles Schwab Catch-up,TRUE,9/30/2017,65059.6354,Retirement
+21069,401(k) - Charles Schwab,TRUE,8/4/2014,25250.2776,Retirement
+21017,401(k) - Charles Schwab Catch-up,FALSE,1/18/2016,27282.8046,Retirement
+21017,401(k) - Charles Schwab,TRUE,4/4/2017,18813.4882,Retirement
+21042,401(k) - Charles Schwab Catch-up,TRUE,6/17/2012,58617.3934,Retirement
+21042,401(k) - Charles Schwab,TRUE,3/15/2015,45875.3743,Retirement
+21060,401(k) - Charles Schwab Catch-up,FALSE,3/25/2018,43792.9122,Retirement
+21060,401(k) - Charles Schwab,TRUE,3/19/2021,45437.7683,Retirement
+21009,401(k) - Charles Schwab Catch-up,TRUE,8/22/2022,65759.2242,Retirement
+21009,401(k) - Charles Schwab,FALSE,6/17/2022,45388.3219,Retirement
+21040,401(k) - Charles Schwab Catch-up,TRUE,8/17/2021,86189.528,Retirement
+21040,401(k) - Charles Schwab Roth,TRUE,7/15/2022,67843.3791,Retirement
+21040,401(k) - Charles Schwab,FALSE,6/29/2018,72348.6035,Retirement
+21028,401(k) - Charles Schwab Catch-up,TRUE,7/28/2017,95819.8549,Retirement
+21028,401(k) - Charles Schwab Roth,TRUE,7/22/2012,66595.1239,Retirement
+21028,401(k) - Charles Schwab,FALSE,10/27/2021,52903.573,Retirement
+21061,401(k) - Charles Schwab Catch-up,FALSE,4/6/2020,88417.821,Retirement
+21061,401(k) - Charles Schwab,TRUE,,21611.8463,Retirement
+21194,401(k) - Charles Schwab Catch-up,TRUE,5/3/2015,22144.1309,Retirement
+21194,401(k) - Charles Schwab Roth,TRUE,5/20/2016,95306.7128,Retirement
+21194,401(k) - Charles Schwab,FALSE,1/15/2014,86939.0901,Retirement
+21098,401(k) - Charles Schwab Catch-up,FALSE,11/28/2015,37484.7159,Retirement
+21098,401(k) - Charles Schwab,FALSE,8/9/2019,33262.7032,Retirement
+21252,Pension - New Ireland PRSA,FALSE,11/17/2015,88509.9265,Other
+21087,401(k) - Charles Schwab,TRUE,7/26/2015,60465.4559,Retirement
+21090,401(k) - Charles Schwab,FALSE,3/13/2013,58606.469,Retirement
+21053,NQDC - Charles Schwab Deferred Compensation - Bonus,TRUE,7/9/2016,52761.068,Other
+21053,NQDC - Charles Schwab Deferred Compensation - Regular,FALSE,2/20/2014,88726.9984,Other
+21053,401(k) - Charles Schwab,TRUE,6/15/2019,14599.7533,Retirement
+21005,NQDC - Charles Schwab Deferred Compensation - Bonus,TRUE,,12307.1154,Other
+21005,401(k) - Charles Schwab Catch-up,TRUE,12/31/2014,55074.0135,Retirement
+21005,401(k) - Charles Schwab,TRUE,4/15/2016,77002.4423,Retirement
+21290,401(k) - Charles Schwab,TRUE,,13661.6607,Retirement
+21157,401(k) - Charles Schwab,TRUE,7/22/2022,60828.0619,Retirement
+21082,401(k) - Charles Schwab,TRUE,9/23/2022,1641.087,Retirement
+21084,401(k) - Charles Schwab,TRUE,3/16/2022,16221.6339,Retirement
+21092,401(k) - Charles Schwab Roth,TRUE,3/12/2013,4117.8323,Retirement
+21092,401(k) - Charles Schwab,TRUE,,90002.5776,Retirement
+21293,RRSP - Sun Life,FALSE,,18568.1797,Retirement
+21289,401(k) - Charles Schwab,TRUE,2/12/2022,28863.5323,Retirement
+21015,401(k) - Charles Schwab,FALSE,4/6/2018,44036.9749,Retirement
+21246,401(k) - Charles Schwab Roth,FALSE,11/9/2012,40325.7239,Retirement
+21246,401(k) - Charles Schwab,FALSE,6/17/2018,46394.4154,Retirement
+21219,Pension - Employees’ Provident Fund Organisation Provident Fund,TRUE,12/24/2021,40099.6365,Other
+21220,Pension - Employees’ Provident Fund Organisation Provident Fund,TRUE,4/14/2014,39272.6875,Other
+21182,Pension - Employees’ Provident Fund Organisation Provident Fund,FALSE,11/9/2016,24658.5944,Other
+21164,Pension - Employees’ Provident Fund Organisation Provident Fund,TRUE,2/17/2016,99431.7646,Other
+21304,Pension - ABN Amro Fund,FALSE,10/5/2022,71368.949,Other
+21253,Pension - ABN Amro Fund,TRUE,,74289.4809,Other
+21270,Pension - ABN Amro Fund,TRUE,11/19/2012,53203.352,Other
+21260,Pension - ABN Amro Fund,TRUE,6/6/2013,88733.9817,Other
+21139,RRSP - Sun Life,TRUE,3/26/2014,89367.3412,Retirement
+21132,RRSP - Sun Life,FALSE,5/9/2020,626.4524,Retirement
+21295,RRSP - Sun Life,TRUE,11/27/2013,84387.3868,Retirement
+21311,RRSP - Sun Life,FALSE,3/28/2020,90122.5858,Retirement
+21310,RRSP - Sun Life,TRUE,5/24/2014,36792.1674,Retirement
+21135,RRSP - Sun Life,TRUE,,79329.5737,Retirement
+21292,RRSP - Sun Life,FALSE,1/26/2021,34811.3007,Retirement
+21291,RRSP - Sun Life,TRUE,9/23/2019,47684.234,Retirement
+21079,RRSP - Sun Life,FALSE,5/20/2021,81316.7362,Retirement
+21231,RRSP - Sun Life,TRUE,9/8/2012,11398.9291,Retirement
+21326,RRSP - Sun Life,TRUE,7/11/2018,77012.5269,Retirement
+21239,Deferred Stock - Standard Life,FALSE,6/4/2014,53305.2527,Other
+21127,Deferred Stock - Standard Life,FALSE,3/11/2020,41761.5615,Other
+21129,Deferred Stock - Standard Life,FALSE,3/27/2016,46859.7588,Other
+21305,Deferred Stock - Standard Life,FALSE,3/19/2022,44078.3135,Other
+21131,Deferred Stock - Standard Life,FALSE,8/7/2022,46006.4021,Other
+21296,RRSP - Sun Life,FALSE,3/10/2017,64275.3823,Retirement
+21347,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,9/26/2014,1943.3801,Other
+21346,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,4/17/2013,6676.4346,Other
+21345,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,4/30/2017,57528.5182,Other
+21131,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,,31590.9889,Other
+21129,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,9/4/2012,32060.2307,Other
+21266,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,9/23/2016,89444.2796,Other
+21332,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,1/11/2013,24119.8827,Other
+21168,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,12/20/2017,31771.4946,Other
+21299,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,3/9/2017,47193.5001,Other
+21244,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,9/18/2013,9776.6251,Other
+21254,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,9/17/2018,34762.1878,Other
+21239,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,11/5/2015,26813.5562,Other
+21305,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,6/17/2019,78973.4409,Other
+21173,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,2/9/2018,41466.0563,Other
+21229,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,3/30/2021,74672.6718,Other
+21298,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,4/1/2021,59156.2973,Other
+21359,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,2/21/2016,49285.1696,Other
+21358,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,,66474.6809,Other
+21357,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,1/25/2017,56435.2609,Other
+21356,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,1/20/2017,6006.1611,Other
+21355,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,6/21/2017,50734.975,Other
+21354,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,3/20/2014,52825.7682,Other
+21353,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,4/2/2017,84058.1783,Other
+21352,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,11/13/2015,3621.1847,Other
+21205,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,4/12/2013,65059.6354,Other
+21351,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,4/14/2017,25250.2776,Other
+21350,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,7/26/2017,27282.8046,Other
+21349,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,5/22/2014,18813.4882,Other
+21348,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,7/26/2020,58617.3934,Other
+21153,401(k) - Charles Schwab,TRUE,4/7/2014,45875.3743,Retirement
+21147,401(k) - Charles Schwab,FALSE,11/20/2018,43792.9122,Retirement
+21152,401(k) - Charles Schwab Roth,FALSE,9/30/2017,45437.7683,Retirement
+21152,401(k) - Charles Schwab,TRUE,8/4/2014,65759.2242,Retirement
+21155,401(k) - Charles Schwab,TRUE,1/18/2016,45388.3219,Retirement
+21151,401(k) - Charles Schwab,FALSE,4/4/2017,86189.528,Retirement
+21156,401(k) - Charles Schwab Roth,TRUE,6/17/2012,67843.3791,Retirement
+21156,401(k) - Charles Schwab,TRUE,3/15/2015,72348.6035,Retirement
+21150,401(k) - Charles Schwab Roth,TRUE,3/25/2018,95819.8549,Retirement
+21150,401(k) - Charles Schwab,FALSE,3/19/2021,66595.1239,Retirement
+21154,401(k) - Charles Schwab Catch-up,TRUE,8/22/2022,52903.573,Retirement
+21154,401(k) - Charles Schwab,TRUE,6/17/2022,88417.821,Retirement
+21148,401(k) - Charles Schwab Catch-up,FALSE,8/17/2021,21611.8463,Retirement
+21148,401(k) - Charles Schwab,TRUE,7/15/2022,22144.1309,Retirement
+21106,Defined Contribution - Charles Schwab Puerto Rico,TRUE,6/29/2018,95306.7128,Other
+21376,Defined Contribution - Bank of Tokyo Mitsubishi UFJ,FALSE,7/28/2017,86939.0901,Other
+21185,Defined Contribution - Bank of Tokyo Mitsubishi UFJ,TRUE,7/22/2012,37484.7159,Other
+21125,Defined Contribution - Bank of Tokyo Mitsubishi UFJ,TRUE,10/27/2021,33262.7032,Other
+21122,Defined Contribution - Bank of Tokyo Mitsubishi UFJ,FALSE,4/6/2020,88509.9265,Other
+21279,Defined Contribution - Bank of Tokyo Mitsubishi UFJ,FALSE,,60465.4559,Other
+21378,Defined Contribution - Bank of Tokyo Mitsubishi UFJ,TRUE,5/3/2015,58606.469,Other
+21284,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,5/20/2016,52761.068,Other
+21127,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,1/15/2014,88726.9984,Other
+21180,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,11/28/2015,14599.7533,Other
+21077,Swedish - Löneväxling Base Salary,FALSE,8/9/2019,12307.1154,Other
+21444,Pension - New Ireland PRSA,FALSE,11/17/2015,55074.0135,Other
+21169,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,7/26/2015,77002.4423,Other
+21167,Pension - Standard Life Auto Enrolment (Eligible Worker),TRUE,3/13/2013,13661.6607,Other
+21227,Pension - Standard Life Auto Enrolment (Eligible Worker),FALSE,7/9/2016,60828.0619,Other
+21476,Defined Contribution - Bank of Tokyo Mitsubishi UFJ,TRUE,2/20/2014,1641.087,Other
+21481,Pension - ABN Amro Fund,FALSE,6/15/2019,16221.6339,Other
+21482,Pension - ABN Amro Fund,TRUE,,4117.8323,Other
+21483,Pension - ABN Amro Fund,TRUE,12/31/2014,90002.5776,Other
+21485,Pension - ABN Amro Fund,TRUE,4/15/2016,18568.1797,Other
+21486,Pension - ABN Amro Fund,TRUE,,28863.5323,Other
+21491,New Zealand Pension - NZL Government Kiwi Saver,TRUE,7/22/2022,44036.9749,Other
+21492,New Zealand Pension - NZL Government Kiwi Saver,TRUE,9/23/2022,40325.7239,Other
+21493,New Zealand Pension - NZL Government Kiwi Saver,TRUE,3/16/2022,46394.4154,Other
+21288,New Zealand Pension - NZL Government Kiwi Saver,TRUE,3/12/2013,40099.6365,Other
+21316,New Zealand Pension - NZL Government Kiwi Saver,TRUE,,39272.6875,Other
+21494,New Zealand Pension - NZL Government Kiwi Saver,TRUE,,24658.5944,Other
+21490,New Zealand Pension - NZL Government Kiwi Saver,FALSE,2/12/2022,99431.7646,Other
+21497,New Zealand Pension - NZL Government Kiwi Saver,TRUE,4/6/2018,71368.949,Other
+21498,New Zealand Pension - NZL Government Kiwi Saver,FALSE,11/9/2012,74289.4809,Other
+21499,New Zealand Pension - NZL Government Kiwi Saver,FALSE,6/17/2018,53203.352,Other
+21387,Health Savings Account - Sun Life,FALSE,12/24/2021,88733.9817,Medical
+21386,Health Savings Account - Sun Life,TRUE,4/14/2014,89367.3412,Medical
+21385,Health Savings Account - Sun Life,TRUE,11/9/2016,626.4524,Medical
+21384,Health Savings Account - Sun Life,FALSE,2/17/2016,84387.3868,Medical
+21383,Health Savings Account - Sun Life,TRUE,10/5/2022,90122.5858,Medical
+21296,Health Savings Account - Sun Life,FALSE,,36792.1674,Medical
+21020,Gym Membership - Club One,TRUE,11/19/2012,79329.5737,Other
+21117,Gym Membership - Club One,TRUE,6/6/2013,34811.3007,Other
+21002,Gym Membership - Club One,TRUE,3/26/2014,47684.234,Other
+21111,Gym Membership - Club One,TRUE,5/9/2020,81316.7362,Other
+21191,Gym Membership - Club One,FALSE,11/27/2013,11398.9291,Other
+21012,Commuter Spending - SHPS Transit Account,TRUE,3/28/2020,77012.5269,Other
+21008,Commuter Spending - SHPS Transit Account,FALSE,5/24/2014,53305.2527,Other
+21008,Commuter Spending - SHPS Parking Account,TRUE,,41761.5615,Other
+21001,Commuter Spending - SHPS Parking Account,TRUE,1/26/2021,46859.7588,Other
+21117,Commuter Spending - SHPS Transit Account,FALSE,9/23/2019,44078.3135,Other
+21109,Commuter Spending - SHPS Transit Account,TRUE,5/20/2021,46006.4021,Other
+21103,Commuter Spending - SHPS Parking Account,FALSE,9/8/2012,64275.3823,Other
+21073,Commuter Spending - SHPS Transit Account,TRUE,7/11/2018,1943.3801,Other
+21072,Commuter Spending - SHPS Parking Account,TRUE,6/4/2014,6676.4346,Other
+21075,Commuter Spending - SHPS Parking Account,FALSE,3/11/2020,57528.5182,Other
+21020,Commuter Spending - SHPS Transit Account,FALSE,3/27/2016,31590.9889,Other
+21119,Commuter Spending - SHPS Transit Account,FALSE,3/19/2022,32060.2307,Other
+21119,Commuter Spending - SHPS Parking Account,FALSE,8/7/2022,89444.2796,Other
+21030,Commuter Spending - SHPS Transit Account,FALSE,3/10/2017,24119.8827,Other
+21108,Commuter Spending - SHPS Transit Account,FALSE,9/26/2014,31771.4946,Other
+21017,Commuter Spending - SHPS Transit Account,TRUE,4/17/2013,47193.5001,Other
+21112,Commuter Spending - SHPS Transit Account,TRUE,4/30/2017,9776.6251,Other
+21112,Commuter Spending - SHPS Parking Account,TRUE,,34762.1878,Other
+21118,Commuter Spending - SHPS Transit Account,TRUE,9/4/2012,26813.5562,Other
+21037,Commuter Spending - SHPS Transit Account,TRUE,9/23/2016,78973.4409,Other
+21042,Gym Membership - Club One,FALSE,1/11/2013,41466.0563,Other
+21042,Commuter Spending - SHPS Transit Account,TRUE,12/20/2017,74672.6718,Other
+21015,Gym Membership - Club One,FALSE,3/9/2017,59156.2973,Other
+21046,Commuter Spending - SHPS Transit Account,FALSE,9/18/2013,49285.1696,Other
+21105,Gym Membership - Club One,FALSE,9/17/2018,66474.6809,Other
+21105,Commuter Spending - SHPS Transit Account,TRUE,11/5/2015,56435.2609,Other
+21001,Gym Membership - Club One,FALSE,6/17/2019,6006.1611,Other
+21255,Commuter Spending - Swebus Bus Pass,FALSE,2/9/2018,50734.975,Other
+21255,Gym Membership - World Class Fitness,FALSE,3/30/2021,52825.7682,Other
+21306,Commuter Spending - Swebus Bus Pass,FALSE,4/1/2021,84058.1783,Other
+21306,Gym Membership - World Class Fitness,TRUE,2/21/2016,3621.1847,Other
+21302,Commuter Spending - Swebus Bus Pass,TRUE,,65059.6354,Other
+21302,Gym Membership - World Class Fitness,TRUE,1/25/2017,25250.2776,Other
+21077,Commuter Spending - Swebus Bus Pass,FALSE,1/20/2017,27282.8046,Other
+21077,Gym Membership - World Class Fitness,TRUE,6/21/2017,18813.4882,Other
+21126,Commuter Spending - Swebus Bus Pass,TRUE,3/20/2014,58617.3934,Other
+21126,Gym Membership - World Class Fitness,FALSE,4/2/2017,45875.3743,Other
+21263,Commuter Spending - Swebus Bus Pass,FALSE,11/13/2015,43792.9122,Other
+21263,Gym Membership - World Class Fitness,FALSE,4/12/2013,45437.7683,Other
+21390,Commuter Spending - Swebus Bus Pass,FALSE,4/14/2017,65759.2242,Other
+21390,Gym Membership - World Class Fitness,FALSE,7/26/2017,45388.3219,Other
+21391,Commuter Spending - Swebus Bus Pass,TRUE,5/22/2014,86189.528,Other
+21391,Gym Membership - World Class Fitness,FALSE,7/26/2020,67843.3791,Other
+21416,Commuter Spending - Swebus Bus Pass,TRUE,4/7/2014,72348.6035,Other
+21419,Commuter Spending - SHPS Transit Account,TRUE,11/20/2018,95819.8549,Other
+21430,Commuter Spending - SHPS Parking Account,FALSE,9/30/2017,66595.1239,Other
+21430,Gym Membership - Club One,FALSE,8/4/2014,52903.573,Other
+21431,Commuter Spending - SHPS Parking Account,TRUE,1/18/2016,88417.821,Other
+21431,Gym Membership - Club One,TRUE,4/4/2017,21611.8463,Other
+21432,Commuter Spending - Swebus Bus Pass,FALSE,6/17/2012,22144.1309,Other
+21284,Charitable Giving - Pennies from Heaven,TRUE,3/15/2015,95306.7128,Other
+21127,Charitable Giving - Pennies from Heaven,TRUE,3/25/2018,86939.0901,Other
+21180,Charitable Giving - Pennies from Heaven,TRUE,3/19/2021,37484.7159,Other
+21303,Meal Vouchers - Edenred Ticket Restaurant,FALSE,8/22/2022,33262.7032,Other
+21403,Meal Vouchers - Edenred Ticket Restaurant,TRUE,6/17/2022,88509.9265,Other
+21405,Meal Vouchers - Edenred Ticket Restaurant,TRUE,8/17/2021,60465.4559,Other
+21404,Meal Vouchers - Edenred Ticket Restaurant,FALSE,7/15/2022,58606.469,Other
+21297,Meal Vouchers - Edenred Ticket Restaurant,TRUE,6/29/2018,52761.068,Other
+21407,Meal Vouchers - Edenred Ticket Restaurant,TRUE,7/28/2017,88726.9984,Other
+21178,Meal Vouchers - Edenred Ticket Restaurant,FALSE,7/22/2012,14599.7533,Other
+21396,Meal Vouchers - Edenred Ticket Restaurant,TRUE,10/27/2021,12307.1154,Other
+21401,Meal Vouchers - Edenred Ticket Restaurant,TRUE,4/6/2020,55074.0135,Other
+21374,Meal Vouchers - Edenred Ticket Restaurant,FALSE,,77002.4423,Other
+21301,Meal Vouchers - Edenred Ticket Restaurant,FALSE,5/3/2015,13661.6607,Other
+21307,Meal Vouchers - Edenred Ticket Restaurant,TRUE,5/20/2016,60828.0619,Other
+21408,Meal Vouchers - Edenred Ticket Restaurant,TRUE,1/15/2014,1641.087,Other
+21409,Meal Vouchers - Edenred Ticket Restaurant,TRUE,11/28/2015,16221.6339,Other
+21398,Meal Vouchers - Edenred Ticket Restaurant,FALSE,8/9/2019,4117.8323,Other
+21393,Meal Vouchers - Edenred Ticket Restaurant,FALSE,11/17/2015,90002.5776,Other
+21397,Meal Vouchers - Edenred Ticket Restaurant,FALSE,7/26/2015,18568.1797,Other
+21402,Meal Vouchers - Edenred Ticket Restaurant,FALSE,3/13/2013,28863.5323,Other
+21395,Meal Vouchers - Edenred Ticket Restaurant,TRUE,7/9/2016,44036.9749,Other
+21300,Meal Vouchers - Edenred Ticket Restaurant,FALSE,2/20/2014,40325.7239,Other
+21400,Meal Vouchers - Edenred Ticket Restaurant,TRUE,6/15/2019,46394.4154,Other
+21392,Meal Vouchers - Edenred Ticket Restaurant,FALSE,,40099.6365,Other
+21394,Meal Vouchers - Edenred Ticket Restaurant,TRUE,12/31/2014,39272.6875,Other
+21435,Commuter Spending - Swebus Bus Pass,TRUE,4/15/2016,24658.5944,Other
+21427,Meal Vouchers - Sodexo Meal Tickets,TRUE,,99431.7646,Other
+21167,Charitable Giving - Pennies from Heaven,TRUE,7/22/2022,71368.949,Other
+21333,Fringe Benefits - Global Modern Services betriebliche Altersversorung (bAV),TRUE,9/23/2022,74289.4809,Other
+21333,Fringe Benefits - Global Modern Services Unfallversicherung,TRUE,3/16/2022,53203.352,Other
+21448,Fringe Benefits - Global Modern Services Fitness-Club Mitgliedschaft,TRUE,3/12/2013,88733.9817,Other
+21448,Fringe Benefits - Global Modern Services betriebliche Altersversorung (bAV),TRUE,,89367.3412,Other
+21448,Fringe Benefits - Global Modern Services Unfallversicherung,TRUE,,626.4524,Other
+21452,Fringe Benefits - Global Modern Services Unfallversicherung,TRUE,2/12/2022,84387.3868,Other
+21334,Fringe Benefits - Global Modern Services Fitness-Club Mitgliedschaft,FALSE,4/6/2018,90122.5858,Other
+21334,Fringe Benefits - Global Modern Services Unfallversicherung,TRUE,11/9/2012,36792.1674,Other
+21186,Meal Vouchers - Edenred Meal Coupons,FALSE,6/17/2018,79329.5737,Other
+21138,Meal Vouchers - Edenred Meal Coupons,FALSE,12/24/2021,34811.3007,Other
+21137,Meal Vouchers - Edenred Meal Coupons,FALSE,4/14/2014,47684.234,Other
+21208,Meal Vouchers - Edenred Meal Coupons,TRUE,11/9/2016,81316.7362,Other
+21187,Meal Vouchers - Edenred Meal Coupons,TRUE,2/17/2016,11398.9291,Other
+21136,Meal Vouchers - Edenred Meal Coupons,FALSE,10/5/2022,77012.5269,Other

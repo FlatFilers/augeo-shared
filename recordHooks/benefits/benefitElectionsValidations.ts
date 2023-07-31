@@ -40,7 +40,8 @@ export function benefitElectionsValidations(record:FlatfileRecord) {
     // you may wish to handle this error in a different way or rethrow the error.
   }
 
-  record.setMetadata({processed: true})
+  const metadata = {processed: true}
+  record.setMetadata(metadata)
 
   // Returns the validated and possibly modified record.
   return record;

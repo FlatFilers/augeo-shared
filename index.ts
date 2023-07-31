@@ -133,11 +133,12 @@ export default function (listener) {
     });
   });
 
-  listener.use(
-    automap({
-      accuracy: 'confident'
-    })
-  );
+  // listener.use(
+  //   automap({
+  //     accuracy: 'confident',
+  //     defaultTargetSheet: 'Benefit Elections'
+  //   })
+  // );
 
   listener.on('commit:created', async (event) => {
     try {
@@ -185,7 +186,7 @@ export default function (listener) {
         console.log('Finished calling RecordHook') // Log after calling RecordHook
       } else {
         console.log(
-          "Failed: sheetSlug does not match 'workers'. Aborting RecordHook call..."
+          "Failed: sheetSlug does not match 'benefit-elections-sheet'. Aborting RecordHook call..."
         )
       }
     } catch (error) {
@@ -196,15 +197,18 @@ export default function (listener) {
     const { spaceId, workbookId } = event.context;
     // catch to make sure all records have been processed before auto-submit
     const sheets = await api.sheets.list({ workbookId });
-    let records:RecordsResponse;
-    let recordsSubmit:any
+    let records: RecordsResponse;
+    let recordsSubmit: any
     for (const [index, element] of sheets.data.entries()) {
-      const pages = Math.ceil(element.countRecords.total / 1000);
+      const recordCount = await api.sheets.getRecordCounts(element.id);
+      const pages = Math.ceil(recordCount.data.counts.total / 1000);
+      console.log(JSON.stringify(pages))
       for (let i = 1; i <= pages; i++) {
-        records = await api.records.get(element.id, {pageNumber:i});
-          if (records.data.records.some((record) => !(record.metadata.processed == true))) {
-            return
-          }
+        records = await api.records.get(element.id, { pageNumber: i });
+        console.log(JSON.stringify(records,null,2));
+        if (records.data.records.some((record) => !(record.metadata.processed == true))) {
+          return
+        };
         recordsSubmit = [...recordsSubmit, records.data.records]
       }
     }
