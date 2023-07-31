@@ -1,8 +1,10 @@
 import { formatRecordDates } from '../../common/dateFormatting';
 import { roundCurrencyValues } from './roundCurrencyValues';
 import { validateBooleanFields } from '../../common/validateBooleanFields';
+import { FlatfileRecord } from '@flatfile/hooks';
 
-export function benefitElectionsValidations(record) {
+
+export function benefitElectionsValidations(record:FlatfileRecord) {
   // The function expects a 'record' object. If the input is not a valid object, it throws an error.
   if (!record || typeof record !== 'object') {
     throw new Error(
@@ -38,7 +40,7 @@ export function benefitElectionsValidations(record) {
     // you may wish to handle this error in a different way or rethrow the error.
   }
 
-  record.metadata = "processed"
+  record.setMetadata({processed: true})
 
   // Returns the validated and possibly modified record.
   return record;

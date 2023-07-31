@@ -29,7 +29,7 @@
 
 
 
-import { recordHook } from '@flatfile/plugin-record-hook';
+import { RecordHook } from '@flatfile/plugin-record-hook';
 import api from '@flatfile/api';
 import { xlsxExtractorPlugin } from '@flatfile/plugin-xlsx-extractor';
 import { submitData } from './actions/submitData';
@@ -139,34 +139,78 @@ export default function (listener) {
     })
   );
 
-  // Attach a record hook to the 'benefit-elections-sheet' of the Flatfile importer
-  listener.use(
-    // When a record is processed, invoke the 'benefitElectionsValidations' function to check for any errors
-    recordHook('benefit-elections-sheet', (record, event) => {
-      const results = benefitElectionsValidations(record);
-      return record;
-    })
-  );
+  listener.on('commit:created', async (event) => {
+    try {
+      // Retrieve the sheetId from the event context
+      const sheetId = event.context.sheetId
 
-  listener.on('commit:created', async (event: FlatfileEvent) => {
-    // get key identifiers, including destination sheet Id
-    const { spaceId, sheetId, workbookId } = event.context;
+      // Fetch the sheet from the API
+      const sheet = await api.sheets.get(sheetId)
 
-    // catch to make sure all records have been processed before auto-submit
-    const sheets = await api.sheets.list({ workbookId })
-    let records:RecordsResponse;
-    for (const [index, element] of sheets.data.entries()) {
-      records[index] = await api.records.get(element.id);
-      // TODO: Check metadata
-      console.log(JSON.stringify(records,null,2))
+      // Only log that the sheet was fetched successfully
+      if (!sheet) {
+        console.log(`Failed to fetch sheet with id: ${sheetId}`)
+        return
       }
-      
-      // TODO: Get a list of successfully synced records IDs back
-      // so we don't delete records that didn't sync.
-      await submitData(event, workbookId, spaceId);
 
-      console.log('Done');
-    });
+      // Verify that the sheetSlug matches 'workers'
+      if (sheet.data.config?.slug === 'benefit-elections-sheet') {
+        console.log(
+          "Confirmed: sheetSlug matches 'benefit-elections-sheet'. Proceeding to call RecordHook..."
+        ) // Log before calling RecordHook
+
+        // Get the fields from the sheet response
+        const fields = sheet.data.config?.fields
+
+        // Log only the number of fields retrieved
+        if (!fields) {
+          console.log('No fields were fetched.')
+          return
+        }
+        console.log(`Successfully fetched ${fields.length} fields.`)
+
+        // Call the RecordHook function with event and a handler
+        await RecordHook(event, async (record, event) => {
+          try {
+            // Pass the fetched employees to the employeeValidations function along with the record
+            await benefitElectionsValidations(record)
+          } catch (error) {
+            // Handle errors that might occur within employeeValidations
+            console.error('Error in benefitElectionsValidations:', error)
+          }
+          // Clean up or perform any necessary actions after the try/catch block
+          console.log("Exiting RecordHook's handler function") // Log when exiting the handler function
+          return record
+        })
+        console.log('Finished calling RecordHook') // Log after calling RecordHook
+      } else {
+        console.log(
+          "Failed: sheetSlug does not match 'workers'. Aborting RecordHook call..."
+        )
+      }
+    } catch (error) {
+      // Handle errors that might occur in the event handler
+      console.error('Error in commit:created event handler:', error)
+    }
+
+    const { spaceId, workbookId } = event.context;
+    // catch to make sure all records have been processed before auto-submit
+    const sheets = await api.sheets.list({ workbookId });
+    let records:RecordsResponse;
+    let recordsSubmit:any
+    for (const [index, element] of sheets.data.entries()) {
+      const pages = Math.ceil(element.countRecords.total / 1000);
+      for (let i = 1; i <= pages; i++) {
+        records = await api.records.get(element.id, {pageNumber:i});
+          if (records.data.records.some((record) => !(record.metadata.processed == true))) {
+            return
+          }
+        recordsSubmit = [...recordsSubmit, records.data.records]
+      }
+    }
+    await submitData(event, workbookId, spaceId, recordsSubmit);
+
+  })
 
   // Listen for the 'submit' action
   listener.filter({ job: 'workbook:submitAction' }, (configure) => {
@@ -191,7 +235,7 @@ export default function (listener) {
           // Perform error handling, such as displaying an error message to the user or triggering a fallback behavior
         }
 
-        if (callback.success) {
+        if (callback) {
           await api.jobs.complete(jobId, {
             info: 'Data synced.',
           });
