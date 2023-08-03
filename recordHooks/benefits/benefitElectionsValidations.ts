@@ -12,6 +12,8 @@ export function benefitElectionsValidations(record:FlatfileRecord) {
     );
   }
 
+  // TODO: Trim function on all values
+
   try {
     formatRecordDates(record, 'benefit-elections-sheet');
   } catch (error) {

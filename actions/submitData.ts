@@ -3,6 +3,9 @@ import { FlatfileEvent } from '@flatfile/listener';
 import { SpaceId, WorkbookId, RecordsResponse } from '@flatfile/api/api';
 import api from '@flatfile/api';
 
+// Submit function should send all valid data
+// GraphQL reponse will contain success and error response
+
 // Function to push data to a webhook
 export async function submitData(
   event: FlatfileEvent,
@@ -32,7 +35,7 @@ export async function submitData(
   const { metadata } = space.data.metadata
 
   // Placeholder here for fetching a Secret from the event
-  // Fort testing - we will hardcode these to see the values pass through in the webhook
+  // For testing - we will hardcode these to see the values pass through in the webhook
   // const customerId = await event.secrets("customer_id");
   // const apiKey = await event.secrets("api_key");
   // const apiSecret = await event.secrets("api_secret");
@@ -42,9 +45,13 @@ export async function submitData(
 
   // Making a POST request to webhook site
   // This would be updated with your own API endpoints
-  return await post({
+  const response = await post({
     hostname: 'webhook.site',
     path: `/57b05d59-0b25-4c1d-937e-f892b83f2771`,
     body: { metadata, customerId, apiKey, apiSecret, recordsSubmit },
   });
+
+  // const { success, failure } = response.data
+  // forEach(success.record) => delete from workbook
+  // forEach(failure.record) => add error message to record
 };
