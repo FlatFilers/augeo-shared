@@ -135,4 +135,4 @@ dist
 
 .flatfile/
 
-scripts/deploy/workflow-envs.ts
+scripts/deploy/workflow-envs.tsnode_modules/
