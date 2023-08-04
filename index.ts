@@ -144,9 +144,9 @@ export default function (listener) {
   });
 
   // TODO: Mock request from Flatfile to Files.com
-  // listener.filter({ job: 'job:completed'}), async (event) => {
-  //   // Flatfile requests the file from Files.com
-  // }
+  listener.filter({ job: 'job:completed'}), async (event) => {
+    // Flatfile requests the file from Files.com
+  }
 
   // Auto-map incoming data
   listener.use(
@@ -157,82 +157,82 @@ export default function (listener) {
   );
 
   // Do auto-transforms and validations on incoming data
-  // listener.on('commit:created', async (event) => {
-  //   try {
-  //     // Retrieve the sheetId from the event context
-  //     const sheetId = event.context.sheetId
+  listener.on('commit:created', async (event) => {
+    try {
+      // Retrieve the sheetId from the event context
+      const sheetId = event.context.sheetId
 
-  //     // Fetch the sheet from the API
-  //     const sheet = await api.sheets.get(sheetId)
+      // Fetch the sheet from the API
+      const sheet = await api.sheets.get(sheetId)
 
-  //     // Only log that the sheet was fetched successfully
-  //     if (!sheet) {
-  //       console.log(`Failed to fetch sheet with id: ${sheetId}`)
-  //       return
-  //     }
+      // Only log that the sheet was fetched successfully
+      if (!sheet) {
+        console.log(`Failed to fetch sheet with id: ${sheetId}`)
+        return
+      }
 
-  //     // Verify that the sheetSlug matches 'workers'
-  //     if (sheet.data.config?.slug === 'benefit-elections-sheet') {
-  //       console.log(
-  //         "Confirmed: sheetSlug matches 'benefit-elections-sheet'. Proceeding to call RecordHook..."
-  //       ) // Log before calling RecordHook
+      // Verify that the sheetSlug matches 'workers'
+      if (sheet.data.config?.slug === 'benefit-elections-sheet') {
+        console.log(
+          "Confirmed: sheetSlug matches 'benefit-elections-sheet'. Proceeding to call RecordHook..."
+        ) // Log before calling RecordHook
 
-  //       // Get the fields from the sheet response
-  //       const fields = sheet.data.config?.fields
+        // Get the fields from the sheet response
+        const fields = sheet.data.config?.fields
 
-  //       // Log only the number of fields retrieved
-  //       if (!fields) {
-  //         console.log('No fields were fetched.')
-  //         return
-  //       }
-  //       console.log(`Successfully fetched ${fields.length} fields.`)
+        // Log only the number of fields retrieved
+        if (!fields) {
+          console.log('No fields were fetched.')
+          return
+        }
+        console.log(`Successfully fetched ${fields.length} fields.`)
 
-  //       // Call the RecordHook function with event and a handler
-  //       await RecordHook(event, async (record, event) => {
-  //         try {
-  //           // Pass the fetched employees to the employeeValidations function along with the record
-  //           await benefitElectionsValidations(record)
-  //         } catch (error) {
-  //           // Handle errors that might occur within employeeValidations
-  //           console.error('Error in benefitElectionsValidations:', error)
-  //         }
-  //         // Clean up or perform any necessary actions after the try/catch block
-  //         console.log("Exiting RecordHook's handler function") // Log when exiting the handler function
-  //         return record
-  //       })
-  //       console.log('Finished calling RecordHook') // Log after calling RecordHook
-  //     } else {
-  //       console.log(
-  //         "Failed: sheetSlug does not match 'benefit-elections-sheet'. Aborting RecordHook call..."
-  //       )
-  //     }
-  //   } catch (error) {
-  //     // Handle errors that might occur in the event handler
-  //     console.error('Error in commit:created event handler:', error)
-  //   }
+        // Call the RecordHook function with event and a handler
+        await RecordHook(event, async (record, event) => {
+          try {
+            // Pass the fetched employees to the employeeValidations function along with the record
+            await benefitElectionsValidations(record)
+          } catch (error) {
+            // Handle errors that might occur within employeeValidations
+            console.error('Error in benefitElectionsValidations:', error)
+          }
+          // Clean up or perform any necessary actions after the try/catch block
+          console.log("Exiting RecordHook's handler function") // Log when exiting the handler function
+          return record
+        })
+        console.log('Finished calling RecordHook') // Log after calling RecordHook
+      } else {
+        console.log(
+          "Failed: sheetSlug does not match 'benefit-elections-sheet'. Aborting RecordHook call..."
+        )
+      }
+    } catch (error) {
+      // Handle errors that might occur in the event handler
+      console.error('Error in commit:created event handler:', error)
+    }
 
-  //   // If all records are processed by data hooks, run the submit function
-  //   const { spaceId, workbookId } = event.context;
-  //   // catch to make sure all records have been processed before auto-submit
-  //   const sheets = await api.sheets.list({ workbookId });
-  //   let records: RecordsResponse;
-  //   let recordsSubmit: any
-  //   for (const [index, element] of sheets.data.entries()) {
-  //     const recordCount = await api.sheets.getRecordCounts(element.id);
-  //     const pages = Math.ceil(recordCount.data.counts.total / 1000);
-  //     console.log(JSON.stringify(pages))
-  //     for (let i = 1; i <= pages; i++) {
-  //       records = await api.records.get(element.id, { pageNumber: i });
-  //       console.log(JSON.stringify(records,null,2));
-  //       if (records.data.records.some((record) => !(record.metadata.processed == true))) {
-  //         return
-  //       };
-  //       recordsSubmit = [...recordsSubmit, records.data.records]
-  //     }
-  //   }
-  //   await submitData(event, workbookId, spaceId, recordsSubmit);
+    // If all records are processed by data hooks, run the submit function
+    const { spaceId, workbookId } = event.context;
+    // catch to make sure all records have been processed before auto-submit
+    const sheets = await api.sheets.list({ workbookId });
+    let records: RecordsResponse;
+    let recordsSubmit: any[] = [];
+    for (const [index, element] of sheets.data.entries()) {
+      const recordCount = await api.sheets.getRecordCounts(element.id);
+      const pages = Math.ceil(recordCount.data.counts.total / 1000);
+      console.log(JSON.stringify(pages))
+      for (let i = 1; i <= pages; i++) {
+        records = await api.records.get(element.id, { pageNumber: i });
+        console.log(JSON.stringify(records,null,2));
+        if (records.data.records.some((record) => !(record.metadata.processed == true))) {
+          return
+        };
+        recordsSubmit = [...recordsSubmit, records.data.records]
+      }
+    }
+    await submitData(event, workbookId, spaceId, recordsSubmit);
 
-  // })
+  })
 
   // Listen for the 'submit' action
   listener.filter({ job: 'workbook:submitAction' }, (configure) => {
