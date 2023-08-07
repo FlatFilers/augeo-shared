@@ -2,7 +2,6 @@ import { post } from '../common/utils/request';
 import { FlatfileEvent } from '@flatfile/listener';
 import { SpaceId, WorkbookId, RecordsResponse } from '@flatfile/api/api';
 import api from '@flatfile/api';
-import { promiseHooks } from 'v8';
 
 // Submit function should send all valid data
 // GraphQL reponse will contain success and error response
