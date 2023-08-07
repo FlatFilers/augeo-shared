@@ -1,3 +1,4 @@
+// OVERALL WORKFLOW
 // files.com SFTP source
 //  -> implement API call to create Space in webhook script from files.com
 //  -> api.spaces.create
@@ -26,18 +27,20 @@
 //  -> generic function built into Action
 // when invalid records > 0, trigger internal notification
 //  -> Slack message
+// when process fails, trigger internal notification
+//  -> Data not retrieved from files.com, data not mapped, synced data did not response with a successful callback
+//  -> Slack message
 
 
 
 import { RecordHook } from '@flatfile/plugin-record-hook';
 import api from '@flatfile/api';
-import { xlsxExtractorPlugin } from '@flatfile/plugin-xlsx-extractor';
+import { ExcelExtractor } from '@flatfile/plugin-xlsx-extractor';
 import { submitData } from './actions/submitData';
 import { blueprintSheets } from './blueprints/benefitsBlueprint';
 import { benefitElectionsValidations } from './recordHooks/benefits/benefitElectionsValidations';
 import { FlatfileEvent } from '@flatfile/listener';
 import { automap } from '@flatfile/plugin-automap';
-import { RecordsResponse } from '@flatfile/api/api';
 import workbookProcessed from './processWorkbook';
 
 // Define the main function that sets up the listener
@@ -48,14 +51,9 @@ export default function (listener) {
   });
 
   // Customer uploads file to files.com -> triggers webhook
-  // -> Create the Space (responds with SpaceId)
-  // -> Assign secrets to the Space
-  // -> Upload the file to the Space
-
-  // Customer uploads file to files.com -> triggers webhook
-  // -> Create the Space (responds with SpaceId)
-  // -> Assign secrets to the Space
-  // -> Flatfile requests the file from Files.com using axios / fetch once the Space has been configured
+  // -> SCRIPT: create the Space (responds with SpaceId)
+  // -> SCRIPT: Assign secrets to the Space
+  // -> SCRIPT: Upload the file to the Space
 
   // Outside of Flatfile, a Space will get created. This responds with a spaceId
   // https://reference.flatfile.com/docs/api/25e20c8ab61c5-create-a-space
@@ -145,15 +143,17 @@ export default function (listener) {
   });
 
   // TODO: Mock request from Flatfile to Files.com
-  listener.filter({ job: 'job:completed'}), async (event) => {
-    // Flatfile requests the file from Files.com
-  }
+  // listener.filter({ job: 'job:completed'}), async (event) => {
+  //   // Flatfile requests the file from Files.com
+  //   // 
+  // }
 
   // Auto-map incoming data
   listener.use(
     automap({
       accuracy: 'confident',
-      defaultTargetSheet: 'Benefit Elections'
+      defaultTargetSheet: 'Benefit Elections',
+      // onFailure: (event) => {}
     })
   );
 
@@ -270,7 +270,7 @@ export default function (listener) {
   // TODO Update Excel Extractor to the latest version
   // Attempt to parse XLSX files, and log any errors encountered during parsing
   try {
-    listener.use(xlsxExtractorPlugin({ rawNumbers: true }));
+    listener.use(ExcelExtractor({ rawNumbers: true }));
   } catch (error) {
     console.error('Failed to parse XLSX files:', error);
   }

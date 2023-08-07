@@ -2,6 +2,7 @@ import { post } from '../common/utils/request';
 import { FlatfileEvent } from '@flatfile/listener';
 import { SpaceId, WorkbookId, RecordsResponse } from '@flatfile/api/api';
 import api from '@flatfile/api';
+import { promiseHooks } from 'v8';
 
 // Submit function should send all valid data
 // GraphQL reponse will contain success and error response
@@ -36,11 +37,17 @@ export async function submitData(
 
   // Placeholder here for fetching a Secret from the event
   // For testing - we will hardcode these to see the values pass through in the webhook
-  // const customerId = await event.secrets("customer_id");
-  // const apiKey = await event.secrets("api_key");
-  // const apiSecret = await event.secrets("api_secret");
+  // Promise.all(
+  //   event.secrets("customer_id"),
+  //   event.secrets("files_key"),
+  //   event.secrets("files_secret"),
+  //   event.secrets("api_key"),
+  //   event.secrets("api_secret"),
+  // )
   const customerId = "customer_id";
-  const apiKey = "api_key";
+  const filesApiKey = "files_key";
+  const filesSecret = "files_secret";
+  const apiKey = "api_key"; 
   const apiSecret = "api_secret";
 
   // Making a POST request to webhook site
@@ -48,7 +55,7 @@ export async function submitData(
   const response = await post({
     hostname: 'webhook.site',
     path: `/57b05d59-0b25-4c1d-937e-f892b83f2771`,
-    body: { metadata, customerId, apiKey, apiSecret, recordsSubmit },
+    body: { metadata, customerId, filesApiKey, filesSecret, apiKey, apiSecret, recordsSubmit },
   });
 
   // const { success, failure } = response.data
