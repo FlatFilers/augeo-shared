@@ -1,3 +1,4 @@
+// OVERALL WORKFLOW
 // files.com SFTP source
 //  -> implement API call to create Space in webhook script from files.com
 //  -> api.spaces.create
@@ -24,20 +25,23 @@
 //  -> POST data?company_id=***?target_env=folder
 // fallback: action button to submit data
 //  -> generic function built into Action
-// when invalid records > 0, trigger internal notification 
+// when invalid records > 0, trigger internal notification
+//  -> Slack message
+// when process fails, trigger internal notification
+//  -> Data not retrieved from files.com, data not mapped, synced data did not response with a successful callback
 //  -> Slack message
 
 
 
 import { RecordHook } from '@flatfile/plugin-record-hook';
 import api from '@flatfile/api';
-import { xlsxExtractorPlugin } from '@flatfile/plugin-xlsx-extractor';
+import { ExcelExtractor } from '@flatfile/plugin-xlsx-extractor';
 import { submitData } from './actions/submitData';
 import { blueprintSheets } from './blueprints/benefitsBlueprint';
 import { benefitElectionsValidations } from './recordHooks/benefits/benefitElectionsValidations';
 import { FlatfileEvent } from '@flatfile/listener';
 import { automap } from '@flatfile/plugin-automap';
-import { RecordsResponse } from '@flatfile/api/api';
+import workbookProcessed from './processWorkbook';
 
 // Define the main function that sets up the listener
 export default function (listener) {
@@ -47,14 +51,9 @@ export default function (listener) {
   });
 
   // Customer uploads file to files.com -> triggers webhook
-  // -> Create the Space (responds with SpaceId)
-  // -> Assign secrets to the Space
-  // -> Upload the file to the Space
-
-  // Customer uploads file to files.com -> triggers webhook
-  // -> Create the Space (responds with SpaceId)
-  // -> Assign secrets to the Space
-  // -> Flatfile requests the file from Files.com using axios / fetch once the Space has been configured
+  // -> SCRIPT: create the Space (responds with SpaceId)
+  // -> SCRIPT: Assign secrets to the Space
+  // -> SCRIPT: Upload the file to the Space
 
   // Outside of Flatfile, a Space will get created. This responds with a spaceId
   // https://reference.flatfile.com/docs/api/25e20c8ab61c5-create-a-space
@@ -73,7 +72,7 @@ export default function (listener) {
   //   "environmentId": "[envId]",
   //   "spaceId": "[spaceId]"
   // }
-
+  
 
   // Add an event listener for the 'job:created' event
   listener.filter({ job: 'space:configure' }, (configure) => {
@@ -144,15 +143,17 @@ export default function (listener) {
   });
 
   // TODO: Mock request from Flatfile to Files.com
-  listener.filter({ job: 'job:completed'}), async (event) => {
-    // Flatfile requests the file from Files.com
-  }
+  // listener.filter({ job: 'job:completed'}), async (event) => {
+  //   // Flatfile requests the file from Files.com
+  //   // 
+  // }
 
   // Auto-map incoming data
   listener.use(
     automap({
       accuracy: 'confident',
-      defaultTargetSheet: 'Benefit Elections'
+      defaultTargetSheet: 'Benefit Elections',
+      // onFailure: (event) => {}
     })
   );
 
@@ -160,79 +161,73 @@ export default function (listener) {
   listener.on('commit:created', async (event) => {
     try {
       // Retrieve the sheetId from the event context
-      const sheetId = event.context.sheetId
+      const sheetId = event.context.sheetId;
 
       // Fetch the sheet from the API
-      const sheet = await api.sheets.get(sheetId)
+      const sheet = await api.sheets.get(sheetId);
 
       // Only log that the sheet was fetched successfully
       if (!sheet) {
-        console.log(`Failed to fetch sheet with id: ${sheetId}`)
-        return
+        console.log(`Failed to fetch sheet with id: ${sheetId}`);
+        return;
       }
 
       // Verify that the sheetSlug matches 'workers'
       if (sheet.data.config?.slug === 'benefit-elections-sheet') {
         console.log(
           "Confirmed: sheetSlug matches 'benefit-elections-sheet'. Proceeding to call RecordHook..."
-        ) // Log before calling RecordHook
+        ); // Log before calling RecordHook
 
         // Get the fields from the sheet response
-        const fields = sheet.data.config?.fields
+        const fields = sheet.data.config?.fields;
 
         // Log only the number of fields retrieved
         if (!fields) {
-          console.log('No fields were fetched.')
-          return
+          console.log('No fields were fetched.');
+          return;
         }
-        console.log(`Successfully fetched ${fields.length} fields.`)
+        console.log(`Successfully fetched ${fields.length} fields.`);
 
         // Call the RecordHook function with event and a handler
         await RecordHook(event, async (record, event) => {
           try {
             // Pass the fetched employees to the employeeValidations function along with the record
-            await benefitElectionsValidations(record)
+            await benefitElectionsValidations(record);
           } catch (error) {
             // Handle errors that might occur within employeeValidations
-            console.error('Error in benefitElectionsValidations:', error)
+            console.error('Error in benefitElectionsValidations:', error);
           }
           // Clean up or perform any necessary actions after the try/catch block
-          console.log("Exiting RecordHook's handler function") // Log when exiting the handler function
-          return record
-        })
-        console.log('Finished calling RecordHook') // Log after calling RecordHook
+          console.log("Exiting RecordHook's handler function"); // Log when exiting the handler function
+          return record;
+        });
+        console.log('Finished calling RecordHook'); // Log after calling RecordHook
       } else {
         console.log(
           "Failed: sheetSlug does not match 'benefit-elections-sheet'. Aborting RecordHook call..."
-        )
+        );
       }
     } catch (error) {
       // Handle errors that might occur in the event handler
-      console.error('Error in commit:created event handler:', error)
+      console.error('Error in commit:created event handler:', error);
     }
 
-    // If all records are processed by data hooks, run the submit function
     const { spaceId, workbookId } = event.context;
-    // catch to make sure all records have been processed before auto-submit
-    const sheets = await api.sheets.list({ workbookId });
-    let records: RecordsResponse;
-    let recordsSubmit: any[] = [];
-    for (const [index, element] of sheets.data.entries()) {
-      const recordCount = await api.sheets.getRecordCounts(element.id);
-      const pages = Math.ceil(recordCount.data.counts.total / 1000);
-      console.log(JSON.stringify(pages))
-      for (let i = 1; i <= pages; i++) {
-        records = await api.records.get(element.id, { pageNumber: i });
-        console.log(JSON.stringify(records,null,2));
-        if (records.data.records.some((record) => !(record.metadata.processed == true))) {
-          return
-        };
-        recordsSubmit = [...recordsSubmit, records.data.records]
-      }
-    }
-    await submitData(event, workbookId, spaceId, recordsSubmit);
+    const isProcessedWorkbook = await workbookProcessed(workbookId, 1000);
+    console.log('isProcessedWorkbook', isProcessedWorkbook);
+    if (isProcessedWorkbook) {
+      const sheets = await api.sheets.list({ workbookId });
+      const records = await Promise.all(
+        sheets.data.map(async (sheet) => {
+          const { data } = await api.records.get(sheet.id);
+          return data.records;
+        })
+      );
 
-  })
+      const recordsSubmit = records.flat();
+      await submitData(event, workbookId, spaceId, recordsSubmit);
+    }
+  });
 
   // Listen for the 'submit' action
   listener.filter({ job: 'workbook:submitAction' }, (configure) => {
@@ -275,7 +270,7 @@ export default function (listener) {
   // TODO Update Excel Extractor to the latest version
   // Attempt to parse XLSX files, and log any errors encountered during parsing
   try {
-    listener.use(xlsxExtractorPlugin({ rawNumbers: true }));
+    listener.use(ExcelExtractor({ rawNumbers: true }));
   } catch (error) {
     console.error('Failed to parse XLSX files:', error);
   }
