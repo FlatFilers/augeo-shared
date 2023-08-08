@@ -52,7 +52,7 @@ const requestListener = (req, res) => {
 
         reader.close();
       }
-    } catch (error: unknown) {
+    } catch (error) {
       console.error(JSON.stringify(error, null, 2));
     }
   });
