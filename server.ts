@@ -4,14 +4,15 @@ const { FlatfileClient } = require("@flatfile/api");
 const Files = require('files.com/lib/Files').default;
 // @ts-ignore
 const File = require('files.com/lib/models/File').default;
+require('dotenv').config();
 
 const host = "localhost";
 const port = 8080;
 
-const api = new FlatfileClient({ token: "" });
+const api = new FlatfileClient({ token: process.env.FLATFILE_API_KEY ?? "" });
 
 // 1 week trial, key is valid until 14 Aug
-Files.setApiKey("4296161e98b428fb0c16f6ba765bcf6053cce979bc5588bb489afac7f8ad68d3");
+Files.setApiKey("b034df97dfbb0c0044deb244ae8288b0965b6df00b0540c8fca09c83d5dbee71");
 
 const requestListener = (req, res) => {
   let body = "";
@@ -25,6 +26,7 @@ const requestListener = (req, res) => {
 
     try {
       const json = JSON.parse(body);
+      console.log("JSON:", json);
 
       if (json["action"] === "create") {
         const path = json["path"];
@@ -36,7 +38,7 @@ const requestListener = (req, res) => {
         const reader = fs.createReadStream(`./${path}`);
 
         const { data: space } = await api.spaces.create({
-          name: "Some Space",
+          name: "Demo Space",
           environmentId: envId,
           autoConfigure: true,
         });
@@ -57,7 +59,7 @@ const requestListener = (req, res) => {
         reader.close();
       }
     } catch (error) {
-      console.error(JSON.stringify(error, null, 2));
+      console.error("Error:", JSON.stringify(error, null, 2));
     }
   });
 
@@ -74,4 +76,8 @@ const server = http.createServer(requestListener);
 
 server.listen(port, host, () => {
   console.log(`Server is running on http://${host}:${port}`);
+  console.log("\n");
+  console.log("token:", process.env.FLATFILE_API_KEY);
+  console.log("envId:", process.env.FLATFILE_ENVIRONMENT);
+  console.log("\n");
 });
